@@ -6,4 +6,4 @@
 * ...
   
 #### Connect me via: thanhtra2001.stt@gmail.com
-#### Copyright &#169 2022 by thanhtradev
+#### Copyright © 2022 by thanhtradev
