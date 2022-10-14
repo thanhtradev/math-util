@@ -19,20 +19,34 @@ public class MathUtil {
      * @return the result of n!
      */
 
+    // Viet ham tinh de quy theo phong cach de quy
+    // n! = n * (n-1)!
+
     public static long getFactorial(int n) {
-
-        if (n < 0 || n > 20)
-            throw new IllegalArgumentException("Invalid number. n must be between 0..20");
-
-        if (n == 0 || n == 1)
-            return 1;
-
-        long product = 1; // bien tich luy acc/accumulation
-        for (int i = 2; i <= n; i++)
-            product *= i;
-
-        return product;
+        if (n < 0 || n > 21) {
+            throw new IllegalArgumentException("n must be between 0..21");
+        }
+        // if (n == 0 || n == 1) {
+        // return 1;
+        // }
+        return n * getFactorial(n - 1);
     }
+
+    // public static long getFactorial(int n) {
+
+    // if (n < 0 || n > 20)
+    // throw new IllegalArgumentException("Invalid number. n must be between
+    // 0..20");
+
+    // if (n == 0 || n == 1)
+    // return 1;
+
+    // long product = 1; // bien tich luy acc/accumulation
+    // for (int i = 2; i <= n; i++)
+    // product *= i;
+
+    // return product;
+    // }
 
     /*
      * Test-case:
