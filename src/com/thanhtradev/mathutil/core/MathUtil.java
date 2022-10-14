@@ -26,9 +26,9 @@ public class MathUtil {
         if (n < 0 || n > 21) {
             throw new IllegalArgumentException("n must be between 0..21");
         }
-        // if (n == 0 || n == 1) {
-        // return 1;
-        // }
+        if (n == 0 || n == 1) {
+            return 1;
+        }
         return n * getFactorial(n - 1);
     }
 
